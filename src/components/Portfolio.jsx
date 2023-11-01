@@ -1,36 +1,41 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import game from "../assets/portfolio/gaming.png";
+import Currency from "../assets/portfolio/currency.jpg";
+import movies from "../assets/portfolio/movies.jpg";
+import VoteChain from "../assets/portfolio/votechain.jpg";
+import Radio from "../assets/portfolio/radio.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
-      id: 1,
-      src: arrayDestruct,
-    },
-    {
       id: 2,
-      src: reactParallax,
+      src: VoteChain,
+      demoUrl: "https://example.com/votechain-demo",
+      githubUrl: "https://github.com/yourusername/votechain",
     },
     {
       id: 3,
-      src: navbar,
+      src: movies,
+      demoUrl: "https://movie-nine-sigma.vercel.app/",
+      githubUrl: "https://github.com/a1bx/movie",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: Currency,
+      demoUrl: "",
+      githubUrl: "https://github.com/a1bx/Currency",
     },
     {
       id: 5,
-      src: installNode,
+      src: game,
+      demoUrl: "https://example.com/game-demo",
+      githubUrl: "https://github.com/yourusername/game",
     },
     {
       id: 6,
-      src: reactWeather,
+      src: Radio,
+      demoUrl: "https://example.com/radio-demo",
+      githubUrl: "https://github.com/yourusername/radio",
     },
   ];
 
@@ -48,7 +53,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demoUrl, githubUrl }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,12 +61,22 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href={demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

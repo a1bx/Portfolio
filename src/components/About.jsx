@@ -14,9 +14,9 @@ const About = () => {
         </div>
         <p className="text-xl mt-20">
         Hello! I'm a dedicated software engineer and computer science student with a passion for coding and problem-solving. 
-        Beyond my tech skills, I have a unique passion for massage therapy, which I've cultivated alongside my technical pursuits. 
+        Beyond my tech skills, I have a unique passion for animation, which I've cultivated alongside my technical pursuits. 
         This diverse combination of skills and interests makes me a well-rounded individual who brings creativity,
-        dedication, and a holistic approach to both the tech world and massage therapy.
+        dedication, and a holistic approach to both the tech world and animation world.
         </p>
 
         <br />
