@@ -4,14 +4,15 @@ import Currency from "../assets/portfolio/currency.jpg";
 import movies from "../assets/portfolio/movies.jpg";
 import VoteChain from "../assets/portfolio/votechain.jpg";
 import Radio from "../assets/portfolio/radio.jpg";
+import { Popover } from "@material-tailwind/react";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 2,
       src: VoteChain,
-      demoUrl: "https://example.com/votechain-demo",
-      githubUrl: "https://github.com/yourusername/votechain",
+      demoUrl: "https://taikai.network/ethsafari/hackathons/ethsafari/projects/clmka9d1n043ywn015kt0wil6/idea",
+      githubUrl: "https://github.com/Vote-Chain/VoteChain",
     },
     {
       id: 3,
@@ -60,6 +61,7 @@ const Portfolio = () => {
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
+              <Popover>
               <div className="flex items-center justify-center">
                 <a
                   href={demoUrl}
@@ -78,6 +80,8 @@ const Portfolio = () => {
                   Code
                 </a>
               </div>
+              </Popover>
+              
             </div>
           ))}
         </div>
