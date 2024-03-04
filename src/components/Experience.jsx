@@ -4,8 +4,8 @@ import html from "../assets/html.png";
 import node from "../assets/nodejs.svg";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+//import nextjs from "../assets/nextjs.png";
+//import graphql from "../assets/graphql.png";
 import flutter from "../assets/flutter.svg";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.svg";
@@ -37,24 +37,24 @@ const Experience = () => {
       title: "React",
       style: "shadow-blue-600",
     },
-    {
-      id: 5,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-white",
-    },
+    // {
+    //   id: 5,
+    //   src: nextjs,
+    //   title: "Next JS",
+    //   style: "shadow-white",
+    // },
     {
       id: 6,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
-    {
-      id: 7,
-      src: graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
-    },
+    // {
+    //   id: 7,
+    //   src: graphql,
+    //   title: "GraphQL",
+    //   style: "shadow-pink-400",
+    // },
     {
       id: 8,
       src: flutter,
@@ -78,11 +78,11 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen sm:pt-[20vh]"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="text-4xl font-bold border-b-4 border-gray-500 pt-[20vh] sm:inline">
             Experience
           </p>
           <p className="py-6">These are some of the technologies I've worked with</p>
