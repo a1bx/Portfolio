@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-10">
         Hello! I'm a dedicated software engineer and computer science student with a passion for coding and problem-solving. 
         Beyond my tech skills, I have a unique passion for animation, which I've cultivated alongside my technical pursuits. 
         This diverse combination of skills and interests makes me a well-rounded individual who brings creativity,
