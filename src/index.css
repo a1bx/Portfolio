@@ -11,3 +11,19 @@
         font-family: 'Raleway', sans-serif;
     }
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+.backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
