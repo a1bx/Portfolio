@@ -1,11 +1,10 @@
 import React from "react";
 
-import html from "../assets/html.png";
+import Solidity from "../assets/Solidity.svg";
 import node from "../assets/nodejs.svg";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-//import nextjs from "../assets/nextjs.png";
-//import graphql from "../assets/graphql.png";
+import Kotlin from "../assets/Kotlin.svg";
 import flutter from "../assets/flutter.svg";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.svg";
@@ -15,8 +14,8 @@ const Experience = () => {
   const techs = [
     {
       id: 1,
-      src: html,
-      title: "HTML",
+      src: Solidity,
+      title: "Solidity",
       style: "shadow-orange-500",
     },
     {
@@ -37,24 +36,19 @@ const Experience = () => {
       title: "React",
       style: "shadow-blue-600",
     },
-    // {
-    //   id: 5,
-    //   src: nextjs,
-    //   title: "Next JS",
-    //   style: "shadow-white",
-    // },
+    {
+      id: 5,
+      src: Kotlin,
+      title: "Kotlin",
+      style: "shadow-white",
+    },
     {
       id: 6,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
-    // {
-    //   id: 7,
-    //   src: graphql,
-    //   title: "GraphQL",
-    //   style: "shadow-pink-400",
-    // },
+    
     {
       id: 8,
       src: flutter,
