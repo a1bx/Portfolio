@@ -62,10 +62,6 @@ const Portfolio = () => {
     setIsFlipped(false);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + portfolios.length) % portfolios.length);
-    setIsFlipped(false);
-  };
 
   useEffect(() => {
     let timer;
@@ -73,7 +69,7 @@ const Portfolio = () => {
       timer = setInterval(nextSlide, 5000);
     }
     return () => clearInterval(timer);
-  }, [isFlipped]);
+  }, );
 
   const getSlideStyle = (index) => {
     const diff = (index - currentIndex + portfolios.length) % portfolios.length;
