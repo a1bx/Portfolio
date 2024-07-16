@@ -68,9 +68,12 @@ const Portfolio = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
+    let timer;
+    if (!isFlipped) {
+      timer = setInterval(nextSlide, 5000);
+    }
     return () => clearInterval(timer);
-  }, []);
+  }, [isFlipped]);
 
   const getSlideStyle = (index) => {
     const diff = (index - currentIndex + portfolios.length) % portfolios.length;
@@ -132,9 +135,6 @@ const Portfolio = () => {
           ))}
 
           {/* Navigation buttons */}
-          {/* <button onClick={prevSlide} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
-            &#10094;
-          </button> */}
           <button onClick={nextSlide} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
             &#10095;
           </button>
