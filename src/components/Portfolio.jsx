@@ -83,7 +83,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div name="my work" className="bg-gradient-to-b from-black to-gray-800 w-full min-h-screen text-white pt-20">
+    <div name="my work" className="bg-gradient-to-b from-black to-gray-800 w-full min-h-screen text-white pt-20 pb-10">
       <div className="max-w-screen-xl mx-auto p-4 flex flex-col justify-center h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 mt-2">My work</p>
@@ -105,7 +105,7 @@ const Portfolio = () => {
           {portfolios.map((item, index) => (
             <div
               key={item.id}
-              className={`absolute w-full lg:w-1/3 h-full transition-all duration-500 ease-in-out ${getSlideStyle(index)}`}
+              className={`absolute w-full p-2 lg:w-1/3 h-full transition-all duration-500 ease-in-out ${getSlideStyle(index)}`}
               onClick={index === currentIndex ? handleCardClick : undefined}
               style={{ perspective: '1000px' }}
             >
