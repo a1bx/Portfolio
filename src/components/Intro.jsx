@@ -1,7 +1,7 @@
 // IntroPage.js
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import DigitalRain from "./DigitalRain";
+import DigitalRain from "./Matrix";
 
 const IntroPage = () => {
   const [text, setText] = useState("");
