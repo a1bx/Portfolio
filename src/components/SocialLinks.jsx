@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://ke.linkedin.com/in/jeremiah-nyok-140981240?trk=profile-badge",
       style: "rounded-tr-md",
     },
     {
@@ -31,7 +31,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: " ",
+      href: "mailto:jeremih.albx12@gmail.com",
     },
     {
       id: 4,
@@ -41,10 +41,11 @@ const SocialLinks = () => {
         </>
       ),
       style: "rounded-br-md",
-      href: "/Jeremiah's Resume.pdf",
-      download: true,
+      href: "https://drive.google.com/uc?export=download&id=1um-lSSkcU2h2DOCUsulPn4UPz_iUJvTQ",
+      download: "Jeremiah's_Resume.pdf",
     },
   ];
+
   return (
     <div className="hidden flex-col top-[35%] left-0 fixed lg:flex">
       <ul>
@@ -58,7 +59,7 @@ const SocialLinks = () => {
             }
           >
             <a
-              href={link.href ? link.href : "/"}
+              href={link.href}
               className="flex justify-between items-center w-full text-white"
               download={link.download}
               target="_blank"
