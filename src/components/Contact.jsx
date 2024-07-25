@@ -15,7 +15,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/31313319-e886-40c5-af98-21b4317d9014"
+            action="https://getform.io/f/bnlenggb"
             method="POST"
             className="flex flex-col w-full md:w-1/2"
           >
@@ -24,19 +24,29 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              required
             />
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              required
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              required
             ></textarea>
+
+            {/* Hidden input for your email */}
+            <input 
+              type="hidden" 
+              name="_gotcha" 
+              value="jeremih.albx12@gmail.com"
+            />
 
             <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's Chat
