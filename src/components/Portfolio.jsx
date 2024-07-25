@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from "react";
-import game from "../assets/portfolio/gaming.png";
+import payd from "../assets/portfolio/payd.svg";
 import Currency from "../assets/portfolio/currency.jpg";
 import movies from "../assets/portfolio/movies.jpg";
 import VoteChain from "../assets/portfolio/votechain.jpg";
-import Radio from "../assets/portfolio/radio.jpg";
+import Radio from "../assets/portfolio/radiologo.png";
+import Jobfinder from "../assets/portfolio/jobfinder.jpg";
 
 const Portfolio = () => {
   const portfolios = [
+    {
+      id: 5,
+      src: Jobfinder,
+      title: "Jobfinder",
+      description: "A react native applicaion for finding and applying for jobs.",
+      demoUrl: "https://taikai.network/ethsafari/hackathons/ethsafari/projects/clmka9d1n043ywn015kt0wil6/idea",
+      githubUrl: "https://github.com/Vote-Chain/VoteChain",
+      additionalInfo: "This app helps users search for job opportunities, providing details on job listings, company information, and application processes. Built with React Native for cross-platform compatibility, it aims to simplify job hunting with a user-friendly interface and real-time updates."
+    },
     {
       id: 2,
       src: VoteChain,
@@ -35,21 +45,21 @@ const Portfolio = () => {
       additionalInfo: "This currency converter offers real-time exchange rates for a wide range of global currencies. It features an intuitive interface, historical rate charts, and the ability to set rate alerts. Built with React Native, it provides a seamless experience across both iOS and Android platforms."
     },
     {
-      id: 5,
-      src: game,
-      title: "Gaming Project",
-      description: "An interactive gaming experience.",
-      demoUrl: "https://example.com/game-demo",
-      githubUrl: "https://github.com/yourusername/game",
-      additionalInfo: "This immersive gaming project showcases advanced graphics and physics engines. It features multiple levels of increasing difficulty, character customization, and online multiplayer functionality. Developed using Unity and C#, it pushes the boundaries of mobile gaming capabilities."
+      id: 1,
+      src: payd,
+      title: "Payd app",
+      description: "Payd is the number one payments and financial management platform for freelancers, creatives, event organisers and gig workers.",
+      demoUrl: "https://web.mypayd.app",
+      githubUrl: "",
+      additionalInfo: "For Individuals, Send invoices, receive payments and track your income the easy way. Access multiple payment channels from mobile to bank, card and crypto. For Businesses, Automate how you pay and get paid. Handle bulk invoices, bulk payments and payment tracking for your business the easy way"
     },
     {
       id: 6,
       src: Radio,
       title: "Radio App",
-      description: "A digital radio application for streaming music and podcasts.",
+      description: "this is a flutter and python radio streaming application for streaming music and podcasts. Still in development",
       demoUrl: "https://example.com/radio-demo",
-      githubUrl: "https://github.com/yourusername/radio",
+      githubUrl: "https://github.com/a1bx/Radio_streaming_app",
       additionalInfo: "This digital radio app offers a vast library of global radio stations and podcasts. It features personalized recommendations, offline playback, and social sharing capabilities. Built with React Native and integrating various streaming APIs, it provides a seamless audio experience across devices."
     },
   ];
