@@ -5,7 +5,7 @@ import Contact from "./Contact";
 import Experience from "./Experience";
 import Home from "./Home";
 import NavBar from "./NavBar";
-import Portfolio from "./Portfolio";
+import Portfolio from "./myWork";
 import SocialLinks from "./SocialLinks";
 
 function MainContent() {
