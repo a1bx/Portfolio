@@ -12,9 +12,9 @@ const Portfolio = () => {
       id: 5,
       src: Jobfinder,
       title: "Jobfinder",
-      description: "A react native applicaion for finding and applying for jobs.",
-      demoUrl: "https://taikai.network/ethsafari/hackathons/ethsafari/projects/clmka9d1n043ywn015kt0wil6/idea",
-      githubUrl: "https://github.com/Vote-Chain/VoteChain",
+      description: "A react native application for finding and applying for jobs.",
+      demoUrl: "",
+      githubUrl: "https://github.com/a1bx/jobfinder",
       additionalInfo: "This app helps users search for job opportunities, providing details on job listings, company information, and application processes. Built with React Native for cross-platform compatibility, it aims to simplify job hunting with a user-friendly interface and real-time updates."
     },
     {
@@ -57,7 +57,7 @@ const Portfolio = () => {
       id: 6,
       src: Radio,
       title: "Radio App",
-      description: "this is a flutter and python radio streaming application for streaming music and podcasts. Still in development",
+      description: "This is a flutter and python radio streaming application for streaming music and podcasts. Still in development",
       demoUrl: "https://example.com/radio-demo",
       githubUrl: "https://github.com/a1bx/Radio_streaming_app",
       additionalInfo: "This digital radio app offers a vast library of global radio stations and podcasts. It features personalized recommendations, offline playback, and social sharing capabilities. Built with React Native and integrating various streaming APIs, it provides a seamless audio experience across devices."
@@ -66,12 +66,17 @@ const Portfolio = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(0);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % portfolios.length);
     setIsFlipped(false);
   };
 
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + portfolios.length) % portfolios.length);
+    setIsFlipped(false);
+  };
 
   useEffect(() => {
     let timer;
@@ -79,7 +84,7 @@ const Portfolio = () => {
       timer = setInterval(nextSlide, 5000);
     }
     return () => clearInterval(timer);
-  }, );
+  }, [isFlipped]);
 
   const getSlideStyle = (index) => {
     const diff = (index - currentIndex + portfolios.length) % portfolios.length;
@@ -92,6 +97,25 @@ const Portfolio = () => {
     setIsFlipped(!isFlipped);
   };
 
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!touchStartX) return;
+
+    const touchEndX = e.touches[0].clientX;
+    const touchDiffX = touchStartX - touchEndX;
+
+    if (touchDiffX > 50) {
+      nextSlide();
+      setTouchStartX(0);
+    } else if (touchDiffX < -50) {
+      prevSlide();
+      setTouchStartX(0);
+    }
+  };
+
   return (
     <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full min-h-screen text-white pt-20 pb-10">
       <div className="max-w-screen-xl mx-auto p-4 flex flex-col justify-center h-full">
@@ -100,7 +124,11 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="flex items-center justify-center h-[600px] relative overflow-hidden">
+        <div
+          className="flex items-center justify-center h-[600px] relative overflow-hidden"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+        >
           {/* Description - visible only on large screens */}
           <div className="w-1/3 p-4 absolute left-0 z-30 hidden lg:block">
             <h2 className="text-2xl font-bold mb-4">{portfolios[currentIndex].title}</h2>
