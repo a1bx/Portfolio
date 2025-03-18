@@ -3,7 +3,7 @@ import payd from "../assets/portfolio/payd.svg";
 import Currency from "../assets/portfolio/currency.jpg";
 import movies from "../assets/portfolio/movies.jpg";
 import VoteChain from "../assets/portfolio/votechain.jpg";
-import Radio from "../assets/portfolio/radiologo.png";
+import Radio from "../assets/portfolio/Now-playing.jpeg";
 import Jobfinder from "../assets/portfolio/jobfinder.jpg";
 
 const Portfolio = () => {
