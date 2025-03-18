@@ -14,9 +14,9 @@ const Home = () => {
             FrontEnd Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I have experience building and designing software.
-            Currently, I love to work on web applications using technologies like
-            React, Tailwind, Next JS, and GraphQL.
+            I have experience building web and mobile applications.
+            Currently, I love to work on mobile applications using technologies like
+            Flutter and web applications using React, Tailwind, Next JS, and typeScript.
           </p>
           <div>
             <Link
