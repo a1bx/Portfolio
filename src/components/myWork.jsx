@@ -134,8 +134,12 @@ const Portfolio = () => {
             <h2 className="text-2xl font-bold mb-4">{portfolios[currentIndex].title}</h2>
             <p className="mb-4">{portfolios[currentIndex].description}</p>
             <div className="flex space-x-4">
-              <a href={portfolios[currentIndex].demoUrl} target="_blank" rel="noopener noreferrer" className="group text-white opacity-70 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Demo</a>
-              <a href={portfolios[currentIndex].githubUrl} target="_blank" rel="noopener noreferrer" className="group text-white opacity-70 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-500 to-black cursor-pointer">Code</a>
+              {portfolios[currentIndex].demoUrl && (
+                <a href={portfolios[currentIndex].demoUrl} target="_blank" rel="noopener noreferrer" className="group text-white opacity-70 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Demo</a>
+              )}
+              {portfolios[currentIndex].githubUrl && (
+                <a href={portfolios[currentIndex].githubUrl} target="_blank" rel="noopener noreferrer" className="group text-white opacity-70 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-500 to-black cursor-pointer">Code</a>
+              )}
             </div>
           </div>
 
@@ -155,8 +159,12 @@ const Portfolio = () => {
                     <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                     <p className="mb-2">{item.description}</p>
                     <div className="flex space-x-4">
-                      <a href={item.demoUrl} target="_blank" rel="noopener noreferrer" className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Demo</a>
-                      <a href={item.githubUrl} target="_blank" rel="noopener noreferrer" className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-500 to-black cursor-pointerm">Code</a>
+                      {item.demoUrl && (
+                        <a href={item.demoUrl} target="_blank" rel="noopener noreferrer" className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Demo</a>
+                      )}
+                      {item.githubUrl && (
+                        <a href={item.githubUrl} target="_blank" rel="noopener noreferrer" className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-500 to-black cursor-pointer">Code</a>
+                      )}
                     </div>
                   </div>
                 </div>
