@@ -42,7 +42,7 @@ const SocialLinks = () => {
       ),
       style: "rounded-br-md",
       href: "https://drive.google.com/drive/u/0/folders/1-EKbGW2X7a2JWDeOtdqeBbKhKaoR29tF",
-      download: "Jeremiah's_Resume.pdf",
+      download: "Jeremiah_Nyok.pdf",
     },
   ];
 
