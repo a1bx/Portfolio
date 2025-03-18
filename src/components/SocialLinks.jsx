@@ -41,7 +41,7 @@ const SocialLinks = () => {
         </>
       ),
       style: "rounded-br-md",
-      href: "https://drive.google.com/uc?export=download&id=1um-lSSkcU2h2DOCUsulPn4UPz_iUJvTQ",
+      href: "https://drive.google.com/drive/u/0/folders/1-EKbGW2X7a2JWDeOtdqeBbKhKaoR29tF",
       download: "Jeremiah's_Resume.pdf",
     },
   ];
