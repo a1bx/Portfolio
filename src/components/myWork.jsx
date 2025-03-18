@@ -88,7 +88,7 @@ const Portfolio = () => {
 
   const getSlideStyle = (index) => {
     const diff = (index - currentIndex + portfolios.length) % portfolios.length;
-    if (diff === 0) return "translate-x-0 scale-100 opacity-100 z-20";
+    if (diff === 0) return "translate-x-0 scale-100 opacity-50 z-20";
     if (diff === 1) return "translate-x-full scale-75 opacity-50 z-10 blur-sm";
     return "-translate-x-full scale-75 opacity-0 z-0";
   };
@@ -134,8 +134,8 @@ const Portfolio = () => {
             <h2 className="text-2xl font-bold mb-4">{portfolios[currentIndex].title}</h2>
             <p className="mb-4">{portfolios[currentIndex].description}</p>
             <div className="flex space-x-4">
-              <a href={portfolios[currentIndex].demoUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded">Demo</a>
-              <a href={portfolios[currentIndex].githubUrl} target="_blank" rel="noopener noreferrer" className="bg-gray-700 text-white px-4 py-2 rounded">Code</a>
+              <a href={portfolios[currentIndex].demoUrl} target="_blank" rel="noopener noreferrer" className="group text-white opacity-70 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Demo</a>
+              <a href={portfolios[currentIndex].githubUrl} target="_blank" rel="noopener noreferrer" className="group text-white opacity-70 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-500 to-black cursor-pointer">Code</a>
             </div>
           </div>
 
@@ -155,8 +155,8 @@ const Portfolio = () => {
                     <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                     <p className="mb-2">{item.description}</p>
                     <div className="flex space-x-4">
-                      <a href={item.demoUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded text-sm">Demo</a>
-                      <a href={item.githubUrl} target="_blank" rel="noopener noreferrer" className="bg-gray-700 text-white px-4 py-2 rounded text-sm">Code</a>
+                      <a href={item.demoUrl} target="_blank" rel="noopener noreferrer" className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Demo</a>
+                      <a href={item.githubUrl} target="_blank" rel="noopener noreferrer" className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-500 to-black cursor-pointerm">Code</a>
                     </div>
                   </div>
                 </div>
