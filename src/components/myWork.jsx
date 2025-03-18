@@ -58,8 +58,8 @@ const Portfolio = () => {
       src: Radio,
       title: "Radio App",
       description: "This is a flutter and python radio streaming application for streaming music and podcasts. Still in development",
-      demoUrl: "https://example.com/radio-demo",
-      githubUrl: "https://github.com/a1bx/Radio_streaming_app",
+      demoUrl: "",
+      githubUrl: "https://github.com/a1bx/stream_Radio",
       additionalInfo: "This digital radio app offers a vast library of global radio stations and podcasts. It features personalized recommendations, offline playback, and social sharing capabilities. Built with React Native and integrating various streaming APIs, it provides a seamless audio experience across devices."
     },
   ];
