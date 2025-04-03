@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import payd from "../assets/portfolio/payd.svg";
-import Currency from "../assets/portfolio/currency.jpg";
+import Currency from "../assets/portfolio/Logo_Vertical_White.png";
 import movies from "../assets/portfolio/movies.jpg";
 import VoteChain from "../assets/portfolio/votechain.jpg";
 import Radio from "../assets/portfolio/Now-playing.jpeg";
