@@ -38,17 +38,17 @@ const Portfolio = () => {
     {
       id: 4,
       src: PureConnect,
-      title: "Currency Converter",
-      description: "An application for converting between different currencies.",
-      demoUrl: "",
-      githubUrl: "https://github.com/a1bx/Currency",
-      additionalInfo: "This currency converter offers real-time exchange rates for a wide range of global currencies. It features an intuitive interface, historical rate charts, and the ability to set rate alerts. Built with React Native, it provides a seamless experience across both iOS and Android platforms."
+      title: "ePureConnect",
+      description: "A dating application",
+      demoUrl: "https://play.google.com/store/apps/details?id=com.cigona.pureconnect",
+      githubUrl: "",
+      additionalInfo: "You can find the application on playstore to try it out"
     },
     {
       id: 1,
       src: payd,
       title: "Payd app",
-      description: "Payd is the number one payments and financial management platform for freelancers, creatives, event organisers and gig workers.",
+      description: "Payd is a payments and financial management platform for freelancers, creatives, event organisers and gig workers.",
       demoUrl: "https://web.mypayd.app",
       githubUrl: "",
       additionalInfo: "For Individuals, Send invoices, receive payments and track your income the easy way. Access multiple payment channels from mobile to bank, card and crypto. For Businesses, Automate how you pay and get paid. Handle bulk invoices, bulk payments and payment tracking for your business the easy way"
